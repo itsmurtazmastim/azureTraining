@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntimemsm",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

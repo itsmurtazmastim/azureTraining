@@ -1,0 +1,24 @@
+{
+	"name": "TriggerOnNewData",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyMetadataForEachPipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/mydata/blobs/",
+			"blobPathEndsWith": "*.csv",
+			"scope": "/subscriptions/aac6a507-4966-4f00-8faa-66aca2973867/resourceGroups/ETLTraining/providers/Microsoft.Storage/storageAccounts/msmstoreac",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
